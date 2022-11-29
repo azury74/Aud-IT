@@ -1,0 +1,503 @@
+@font-face {
+  
+
+  font-family: 'Futura';
+  src: url("../Font/Futura.otf");
+
+}
+
+@font-face{
+
+  font-family:'Baron Neue Black';
+  src: url("../Font/Baron Neue Black.otf");
+}
+
+
+
+/*Page acceuil*/
+.body1
+{
+background-color:#489dbc;
+}
+
+.Logo
+{
+max-width: 70%;
+height: 120px;
+position: absolute;
+left:100px;
+top:60px;
+
+
+}
+.tel
+{
+margin-left:50px;
+margin-top:100px;
+}
+.NavAcceuil
+{
+  display:flex;
+  margin-left:750px;
+  margin-top:100px;
+}
+.tell
+{
+margin-left:100px;
+display:flex;
+margin-top:50px;
+}
+
+.lien1
+{
+  
+color: white;
+      font-family: Futura;
+      font-size:1.3em;
+      margin-left:  10px;
+      margin-right :50px;
+}
+
+.lien77
+{  
+  color:white;font-size:1.3em;
+  
+  margin-left:  50px;
+  margin-right :50px;
+  font-family:Futura;
+  position :relative;
+}
+
+.lien78
+{  
+  color:white;font-size:1.3em;
+  margin-left:  50px;
+  margin-right :50px;
+  font-family:Futura;
+  position :relative;
+  background-color:#911c7a;
+  padding:8px;
+  border-radius:6px;
+}
+
+.lien78:hover
+{  
+  color:white;font-size:1.3em;
+  font-family:Futura;
+  margin-left:  50px;
+  margin-right :50px;
+  position :relative;
+  background-color:black;
+  padding:8px;
+  border-radius:6px;
+}
+
+.lien77::after
+{
+  content:"";
+  display:block;
+  position: absolute;
+  bottom:2.4px;
+  height:2.5px;
+  z-index: -1;
+  width: 100%;
+  background-color:#911c7a;
+  
+  transform: scaleX(0);
+  transition :transform 0.4s
+  ease-in-out;
+}
+
+.lien77:hover::after{
+  transform:scaleX(1);
+}
+
+.lien79
+{  
+  color:white;font-size:1.3em;
+  font-family:Futura;
+  position :relative;
+}
+.lien79::after
+{
+  content:"";
+  display:block;
+  position: absolute;
+  bottom:2.4px;
+  height:2.5px;
+  z-index: -1;
+  width: 100%;
+  background-color:#f19001;
+  
+  transform: scaleX(0);
+  transition :transform 0.4s
+  ease-in-out;
+}
+
+.lien79:hover::after{
+  transform:scaleX(1);
+}
+.BandeAcceuil
+{
+justify-content: center;
+      margin-top: 270px;
+}
+
+.BandeAcceuil2
+{
+justify-content: center;
+      margin-top: 200px;
+      margin-left:250px;
+      
+}
+
+.BandeAcceuil3
+{
+justify-content: center;
+      margin-top: 250px;
+      
+}
+
+
+.TitreBandeAcceuil
+{
+ 
+  font-size: 2.5em;
+  margin-left:50px;
+  width:9em;
+  color:white;
+  font-family: futura;
+  
+}
+
+.TitreBandeAcceuil2
+{
+ 
+  font-size: 3em;
+ margin-top:-1px;
+ margin-left:10px;
+ color:white;
+  font-family: futura;
+  
+}
+
+.TitreBandeAcceuil3
+{
+ 
+  font-size: 3em;
+  margin-left:-100px;
+  color:white;
+  font-family: futura;
+  
+}
+.inputText
+{
+  width: 100%; 
+padding: 12px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+box-sizing: border-box; 
+margin-top: 6px; 
+margin-bottom: 16px; 
+resize: vertical;
+color:black
+}
+
+.button {
+border-radius: 4px;
+background-color:#489dbc;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 14px;
+width:40%;
+padding:10px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+a
+{
+color: white;
+      
+text-decoration: none;
+
+}
+
+
+.vid
+{
+    padding-right:50px;
+    margin-top:70px;
+}
+a:active
+{
+color: white;
+background-color: white;
+
+}
+a:visited
+{
+
+text-decoration: underline;
+text-decoration: none;
+}
+#enCours
+{
+background-color:red;
+      
+
+    
+}
+
+#enCours1
+{
+text-decoration: underline #911c7a;
+text-underline-offset: 1rem;
+text-decoration-thickness: 0.12em;
+}
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -110px;
+z-index:4;
+}
+
+
+.ml1250mt250
+{
+  margin-left: 1250px;margin-top: -250px
+}
+
+.bande1
+{
+  display:flex;justify-content: center;margin-top: -50px
+}
+
+.text
+{
+  color:white;font-family: futura
+}
+
+.height400
+{
+  height: 400px
+}
+.height4400
+{
+  height: 750px;
+  margin-right:50px;
+}
+
+.height500
+{
+  height: 60px
+}
+.height50
+{
+  height: 50px
+}
+.height60
+{
+  height: 60px;
+  padding:10px;
+}
+.ping
+{
+  position:absolute;top:600px;left:150px;
+}
+
+.cloud1
+{
+  margin-left: 1000px;margin-top: 40px
+}
+
+.cloud2
+{
+  margin-left: 100px;margin-top: -100px
+}
+
+.cloud3
+{
+  margin-left: -100px;margin-top: 40px;height: 100px;
+}
+
+.bande2
+{
+   justify-content: center;margin-top: -50px;
+}
+
+.bande3
+{
+  display: flex; justify-content: center;margin-top: 100px;padding-right:70px;
+}
+.txtCrea
+{
+  color:white;font-family:futura;width:20em;font-size: 1.3em;line-height:1.7em;margin-left:50px;
+}
+
+.txtCrea2
+{
+  color:white;font-family:futura;width:20em;font-size: 1.3em;line-height:1.7em;
+}
+.txtCC
+{
+  color:white;font-family:futura;font-size:1.8em;
+}
+.txtCC1
+{
+  color:white;font-family:futura;font-size:1.5em;
+}
+.avion
+{
+  margin-left: 1100px;margin-top:30px;height: 50px
+}
+
+.titreQui
+{
+  color:white;
+  font-family: futura;
+  margin-right: 100px;
+  margin-top: 10px;
+  font-size: 3em;
+
+  margin-left: -300px;
+ 
+}
+
+.logoEsme
+{
+  height: 450px;margin-right: -400px;
+}
+.div1
+{
+  display:flex;margin-left: 200px;margin-top:-250px
+}
+
+.txtQui
+{
+  color:white;font-family:futura;width:30em;font-size: 1.3em;line-height:1.9em;margin-left:-240px;padding-right:80px;
+}
+.div2
+{
+  display: flex; justify-content: center;margin-top: -120px
+}
+
+.div8
+{
+display:flex;margin-top:50px;justify-content:center
+}
+.div9
+{
+  margin-top:100px;
+  
+}
+.div10
+{
+margin-left:50px
+}
+.div12
+{
+justify-content: center;
+}
+.contact
+{
+  height: 450px;margin-left:-190px;margin-top:200px
+}
+
+.piaf
+{
+  height:50px;margin-left: -150px;margin-top:20px
+}
+
+.contactez
+{
+  color:white;font-family: futura;margin-left: 100px;margin-top: 40px;font-size: 3em;
+  
+}
+
+.div3
+{
+  background-color:white;width:450px;border-radius: 4px;box-shadow: 5px 5px 15px black;padding:15px;
+}
+.txt 
+{
+  color:black;font-family: futura
+}
+
+.footer
+{
+  margin-top:-15px;
+
+}
+.terre
+{
+  position:absolute;left:0px;width: 100%;z-index:4;
+}
+
+body {
+  
+  animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s; /* Firefox */
+  -webkit-animation: fadein 2.5s; /* Safari et Chrome */
+  -o-animation: fadein 2.5s; /* Opera */
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* sur Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}

@@ -1,0 +1,151 @@
+@font-face {
+  
+
+  font-family: 'Futura';
+  src: url("../Font/Futura.otf");
+
+}
+
+@font-face{
+
+  font-family:'Baron Neue Black';
+  src: url("../Font/Baron Neue Black.otf");
+}
+
+.lien79
+{  
+  color:white;font-size:1.3em;
+  font-family:Futura;
+  position :relative;
+  background-color:white;
+  color :black;
+  margin-top:3px;
+  margin-left:15px;
+  padding:5px;
+  border-radius:6px;
+}
+
+
+/* Page signin*/
+
+.loginbox{
+  width: 450px;
+  height: 460px;
+  background: rgb(77, 77, 77);
+  border-radius: 10px;
+  color: #fff;
+  top: 53%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;  
+  padding: 60px 30px;
+  font-family: Futura;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);   
+}
+
+.auth
+{
+  margin:0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.loginbox p{
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding:0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.loginbox input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+select
+{
+  background:black;
+  color:white;
+  font-size:16px;
+  width:100%;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.loginbox input[type="radio"]{
+  margin-left: 60px;
+  margin-bottom: 0;
+  
+}
+
+.loginbox input[type="text"], input[type="password"]{
+  width: 100%;
+  border: none;
+
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;   
+}
+
+.loginbox input[type="submit"]{
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover{
+  width: 100%;
+  cursor: pointer;
+  background: #4161E5;
+  color: #fff;
+}
+
+.loginbox a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.loginbox a:hover{
+  color: #4161E5;
+}
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:0px 0px 0px 0px;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0px 0px 8px 8px;
+}
