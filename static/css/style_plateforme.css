@@ -1,0 +1,1055 @@
+@font-face {
+  
+
+  font-family: 'Futura';
+  src: url("../Font/Futura.otf");
+
+}
+
+@font-face{
+
+  font-family:'Baron Neue Black';
+  src: url("../Font/Baron Neue Black.otf");
+}
+
+
+input[type="text"],input[type="password"],textarea{
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #fff;
+    font-size: 16px;   
+}
+
+input[type="submit"]{
+border-radius: 4px;
+  background-color: red;
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+  family-font:Futura;
+ 
+  cursor: pointer;
+ padding:5px;
+           
+}
+.buttonTable
+{
+    border-radius: 8px;
+    background-color:#489dbc;
+    box-shadow: 2px 2px black;
+    width: 10px;
+	font-size:0.8em;
+	padding:4px;
+}
+.button {
+  border-radius: 4px;
+  background-color: #489dbc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  width:23%;
+  padding:10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+body
+{
+background:url(../Images/fond.png);
+}
+
+.LogoHeader,.NomHeader,.logoFooter,.MailFooter,.lien1,.logo1,.Deco,.Profil,.logoProfil,.NavEmploye,.NavAcceuil,.NavAcceuil111,.valide,.nonvalide
+{
+	z-index: 3;
+
+
+
+}
+.headerFond,.footerFond
+{
+	z-index: 2;
+}
+
+
+.PresentationEcole
+{
+    display:flex;
+    justify-content: center;
+
+    
+}
+
+.pres
+{
+	max-width: 70%;
+	height: 100px;	
+	
+}
+.pres89
+{
+	max-width: 70%;
+	height: 60px;	
+       position:absolute;
+       right:10px;
+       bottom:10px;
+      
+	
+}
+.BandeAcceuil
+{
+	justify-content: center;
+        margin-top: 250px;
+}
+
+.footerContenu
+{
+    display: flex;
+    position: absolute;
+    top:1100px;
+}
+.footerContenu1
+{
+    display: flex;
+   
+}
+
+.cercle{
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background: red;
+    margin-left:-10px;
+}
+.flex,.header
+{
+    display:flex;
+}	
+
+.BouttonBandeAcceuil
+{
+	color: black;
+	background-color: red;
+	width: 105px;
+	padding: 7px;
+        margin :auto;
+        font-family: Futura;
+
+}
+.NameHeader
+{
+	color:white ;
+
+	font-family: Futura;
+	position: absolute;
+	left: 220px;
+	top:25px;
+}
+
+.NameHeader56
+{
+	color:white ;
+	background-color: black;
+	font-family: Futura;
+	position: absolute;
+	left: 400px;
+	top:30px;
+}
+
+
+
+.TexteBandeAcceuil1,.TexteBandeAcceuil2
+{
+	font-family: Futura;
+        margin:15px;
+        font-size: 1.2em;
+       
+
+}
+
+
+
+.TextFooter
+{
+	color:white;
+	font-family: Futura;
+	font-size: 0.9em;	
+	margin-left:40px;
+	
+}
+
+.TitreBandeAcceuil
+{
+    color:black;
+    font-family: Baron Neue Black;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    
+}
+
+.HeaderFond
+{
+
+	width:100%;
+	height:150px;
+	background-color:rgb(79, 76, 75);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	box-shadow: 6px 6px 30px black;
+	
+}
+.HeaderFond111
+{
+
+	width:100%;
+	height:150px;
+	background-color:black;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	box-shadow: 6px 6px 30px black;
+	
+}
+.FooterFond
+{
+	width:100%;
+	height:150px;
+	background-color: rgb(79, 76, 75);
+	position: absolute;
+	top:1100px;
+	left: 0px;
+}
+
+.RectangleBandeAcceuil
+{
+	width: 100%;
+	height: 300px;
+	background-color: white;
+	position: absolute;
+	top: 140px;
+	left: 0px;
+	z-index: 0;
+}
+
+
+
+
+
+.Logo
+{
+	max-width: 70%;
+	height: 60px;
+	position: absolute;
+	left:40px;
+	top:30px;
+	
+	
+}
+
+.Logo56
+{
+	max-width: 70%;
+	height: 90px;
+	position: absolute;
+	left:0px;
+	top:30px;
+	
+	
+}
+.logo1
+{
+	max-width: 85%;
+	height: 70px;	
+	margin-left:30px	
+}
+.logo2
+{
+	max-width: 100%;
+	height: 100px;	
+	position: absolute;
+	bottom: 15px;
+        font-size:1.5em;
+	
+}
+
+.lien1
+{
+	color: white;
+        font-family: Futura;
+        font-size:1.5em;
+        margin-left:  10px;
+        margin-right :10px;
+}
+
+.NavAcceuil
+{
+    display:flex;
+    position: absolute;
+    top:50px;
+    right:100px;
+}
+
+.NavAcceuil111
+{
+    display:flex;
+    position: absolute;
+    top:50px;
+    right:100px;
+}
+
+.Divider1
+{	
+	background-color: white;
+	width: 3px;
+	height:25px;	
+}
+
+
+
+
+
+/* Page profil*/
+.LogoProfil1
+{
+   
+    max-width: 100%;
+    height: 150px;
+    margin :30px;
+}
+
+.PageInfo
+{
+   margin-top:250px;
+   margin-left: 140px;
+   width:80%;
+   border-radius: 30px;
+   padding-bottom: 60px;
+   background-color:rgb(79, 76, 75);
+   box-shadow: 2px 2px 30px black;
+}
+
+.Info
+{
+    display:flex;
+    
+}
+.Info1
+{
+    font-family: futura;
+    margin-left: 150px;
+    margin-top:10px;
+}
+.pos
+{
+    margin-top:40px;
+}
+.txt1
+{
+    color:white;
+    font-family: Baron Neue Black;
+    font-size: 1em;
+    margin-left: 30px;
+    margin-top:10px;
+   
+}
+
+.txt12
+{
+    color:green;
+    font-family: Baron Neue Black;
+    font-size: 1.5em;
+   
+}
+
+.txt13
+{
+    color:red;
+    font-family: Baron Neue Black;
+    font-size: 1.5em;
+    margin-left: 40px;
+   
+}
+.txt2
+{
+    color:white;
+    font-family: Baron Neue Black;
+    font-size: 1em;
+    margin-left:50px;
+    margin-right :10px;
+    margin-top:30px;
+}
+.policeProfil
+{
+    font-family: Futura;
+    font-size: 3em;
+    color:white;
+}
+.adresse
+{
+    vertical-align: top;
+    resize: none;
+}
+
+.NavEmploye
+{
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 190px;
+    
+    font-family: Futura;
+    font-size:1.5em;  
+      
+}
+
+.Envoi1
+{
+    margin-top:30px;
+    margin-left:240px;
+}
+
+.Divider
+{
+   background-color: white;
+   width: 3px;
+   height:30px;
+}
+
+.Divider45
+{
+   background-color: black;
+   width: 3px;
+   height:24px;
+}
+.Divider8
+{
+   background-color: black;
+   width: 3px;
+   height:21px;
+}
+
+.Divider4
+{
+   background-color: white;
+   width: 90%;
+   height:3px;
+   margin-left:20px;
+   margin-top :10px;
+}
+
+.lien{
+color: white;
+    margin-left:  10px;
+    margin-right :10px;
+}
+
+.lien77
+{
+    color: white;
+    margin-left:  10px;
+    margin-right :10px;
+    font-family:Futura;
+    position :relative;
+}
+.lien77::after
+{
+    content:"";
+    display:block;
+    position: absolute;
+    bottom:2.4px;
+    height:2.5px;
+    z-index: -1;
+    width: 100%;
+    background: #489dbc;
+    
+    transform: scaleX(0);
+    transition :transform 0.4s
+    ease-in-out;
+}
+
+.lien77:hover::after{
+    transform:scaleX(1);
+}
+
+.lien88
+{
+    color: black;
+    margin-left:  10px;
+    margin-right :10px;
+  
+    position :relative;
+}
+.lien88::after
+{
+    content:"";
+    display:block;
+    position: absolute;
+    bottom:-2px;
+    height:2px;
+    z-index: -1;
+    width: 100%;
+    background: red;
+    
+    transform: scaleX(0);
+    transition :transform 0.4s
+    ease-in-out;
+}
+
+.lien88:hover::after{
+    transform:scaleX(1);
+}
+
+.lien99
+{
+    color: black;
+    margin-left:  10px;
+    margin-right :10px;
+  
+    position :relative;
+}
+.lien99::after
+{
+    content:"";
+    display:block;
+    position: absolute;
+    bottom:-0.5px;
+    height:2px;
+    z-index: -1;
+    width: 100%;
+    background: red;
+    
+    transform: scaleX(0);
+    transition :transform 0.4s
+    ease-in-out;
+}
+
+.lien99:hover::after{
+    transform:scaleX(1);
+}
+
+
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:0px 0px 0px 0px;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0px 0px 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+
+#menu-demo2 li:last-child{
+
+
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#489dbc;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#489dbc;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#489dbc;
+}
+#menu-demo2 li:last-child li{
+background:#489dbc;
+}
+
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#ffffff;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+border-radius: 15px;
+padding:5px 30px;
+font-size:0.7em;
+color:#fff;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#489dbc;
+}
+
+#rangeValue {
+  font-size: 1.2em;
+  color: #999;
+  font-weight: 400;
+  font-family: futura;
+}
+.range {
+  width: 400px;
+  height: 15px;
+  -webkit-appearance: none;
+  background: #656565;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #656565;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #656565;
+  cursor: pointer;
+  border: 4px solid rgb(255, 255, 255);
+  box-shadow: -407px 0 0 400px rgba(0, 0, 0, 1);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+
+
+.type2
+{ 
+    color: white;
+    font-family: Futura;
+    font-size: 1.2em;
+    margin-top:-25px;
+}
+
+
+/* Page Authentification */
+.contenu
+{
+    position :absolute;
+    top : 250px;
+    left: 550px;
+
+}
+
+/*Déconnexion */
+
+.Deco
+{
+        margin:15px; 
+	color: white;
+        font-family: Futura 1px;
+
+     
+}
+
+.Profil 
+{       
+        display:flex;
+        
+        position: absolute;
+	right: 200px;
+	top: 83px;
+	color: white;
+        font-family: Futura;
+}
+
+.LogoProfil
+{
+	
+        max-width: 100%;
+	height: 35px;
+        margin :10px;
+}
+.RectangleConnexion
+{
+    width:45%;
+    height:350px;
+    background-color:rgb(79, 76, 75);
+    position: absolute;
+    top:280px;
+    left:400px;
+    box-shadow: 6px 6px 30px black;
+}
+.titre
+{
+    color:white;
+    font-family: Baron Neue Black;
+    text-align: center;
+    font-size: 4em;
+}
+
+.txt
+{
+    color:white;
+    font-family: Baron Neue Black;
+    font-size: 2em;
+}
+
+.Envoi
+{
+    margin-top:30px;
+    margin-left:180px;
+}
+.Echec
+{
+    color:red;
+    font-family: Baron Neue Black;
+    text-align: center;
+    
+}
+/* Page contact*/
+.PageContact
+{
+   margin-top:250px;
+    margin-left: 140px;
+    width:80%;
+    padding-bottom: 20px;
+    background-color:rgb(79, 76, 75);
+    box-shadow: 2px 2px 30px black;
+}
+
+.footer5
+{
+    
+  
+  width: 100%;
+  margin-top:100px;
+  position: absolute;
+  left: 0px;
+  background-color: rgb(79, 76, 75);
+  
+}
+
+         
+
+.policeContact
+{
+    font-family: Futura;
+    font-size: 3em;
+    color:white;
+}
+.formulaire
+{
+    display:flex;
+    margin-top:20px;
+    
+}
+.historique
+{
+    position:absolute;
+    top:55px;
+    right:80px;
+    font-family: Futura;
+    color: white;
+}
+
+.formulaire2,.formulaire3
+{
+    margin-top:50px;
+}
+
+.formulaire4
+{  
+    margin-top:50px;
+    margin-left:0px;
+}
+.valide
+{   
+    display:flex;;
+    position:absolute;
+    top:290px;
+    right:400px;
+     
+     
+}
+.valide3
+{
+    max-width: 100%;
+     height: 45px;
+}
+.valide1
+{
+    color:rgb(0,169,60);
+    font-family: Futura;
+    margin-left:20px;
+}
+
+.nonvalide1
+{
+    color:rgb(240,9,15);
+    font-family: Futura;
+    margin-left:20px;
+}
+.nonvalide
+{
+    display:flex;
+     position:absolute;
+     top:290px;
+     right:400px;
+}
+.nonvalide3
+{
+    max-width: 100%;
+     height: 45px;
+}
+
+
+/* Page historique */
+
+.com
+{
+    display: flex;
+    font-family:Futura;
+    color:white;
+    margin-left:40px;
+    font-size: 1.2em;
+    
+}
+.tableau2
+{
+   margin-top:40px;
+    margin-left: 50px;
+}
+.com1
+{
+    margin-left :40px;
+ 
+}
+.Envoi2
+{
+    margin-top:70px;
+    margin-left:580px;
+}
+
+.txtInfo
+{
+
+    color:white;
+    font-family: Baron Neue Black;
+    font-size: 1em;
+    margin-left:50px;
+    margin-right :10px;
+    margin-top:-7px;
+}
+.txtConge
+{
+
+    color:white;
+    font-family: Baron Neue Black;
+    font-size: 1em;
+    margin-left:50px;
+    margin-right :10px;
+    margin-top:40px;
+}
+.formulaire5
+{  
+    margin-top:30px;
+    margin-left:0px;
+}
+/* Menu */
+
+a
+{
+	color: white;  
+	text-decoration: none;
+
+}
+
+
+
+a:active
+{
+	color: white;
+	background-color: white;
+	
+}
+a:visited
+{
+	
+	text-decoration: underline;
+	text-decoration: none;
+}
+#enCours
+{
+	background-color:#489dbc;  
+}
+
+#enCours1
+{
+	text-decoration: underline #489dbc;
+}
+/*Page gestion salarie*/
+
+.PageGestionSalarie
+{
+    position:absolute;
+    top : 250px;
+    left:65px;
+    width:90%;
+   padding-bottom: 20px;
+    background-color:rgb(79, 76, 75);
+    box-shadow: 2px 2px 30px black;
+}
+.navGestion
+{
+    display: flex;
+    margin-top:-10px;
+    
+}
+.lien3
+{
+	color: white;
+        font-family: Futura;
+        font-size:1.3em;
+        margin-left:  10px;
+        margin-right :10px;
+}
+.Divider3
+{
+ 	
+	background-color: white;
+	width: 3px;
+	height:24px;	
+}
+.Divider6
+{
+   background-color: white;
+   width: 90%;
+   height:3px;
+   margin-left:50px;
+   margin-top:-10px;
+}
+table
+{
+    border-collapse: collapse; 
+    
+    
+}
+td
+{
+    border: 1px solid white;
+    font-family: Futura;
+    font-size: 1.2em;
+    color: white;
+}
+
+th
+{
+   border: 1px solid white;
+    font-family: Futura;
+    font-size: 1.5em;
+    color: white; 
+}
+.tableau
+{
+    margin-top:40px;
+    margin-left: 30px;
+}
+.tableau5
+{
+    margin-top:30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.tableau6
+{
+      margin-top:40px;
+    margin-left: 50px;
+}
+
+.TitreTableau
+{
+    color: white;
+    font-family: Futura;
+    margin-left: 30px;
+
+}
+.TitreTableau2
+{
+    color: white;
+    font-family: Futura;
+    margin-left: 30px;
+    margin-top: 70px;
+
+}
+.formulaire6
+{
+    margin-top: 40px;
+}
+
+.vert
+{
+    background-color: green;
+}
+
+.rouge
+{
+    background-color: red;
+}
+
+.choix
+{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 160px;
+}
+		
