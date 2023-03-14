@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="../static/css/style_plateforme.css">   
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/Images/favicon-32x32.png">
+        <title>AUD'IT</title>
+    </head>
+
+    <body>
+
+    	<header>
+
+    		<div class="header">
+   				<div class="LogoHeader"><img src="../static/Images/logoblanc2.png" alt="Logo" class="Logo"> </div>
+                                <div class="NomHeader"><h1 class="NameHeader">Plateforme de test</h1></div>
+                                <div class="Profil"><img src="../static/Images/profil.png"  alt="Logo" class="LogoProfil">
+                                <a href="{{ url_for('logout') }}" title="Déco" class="Deco">Déconnexion</a></div>
+
+   				<div class="HeaderFond"></div>
+			</div>
+    	<div class="NavEmploye">
+            
+              <a href="{{ url_for('accueil') }}" class="lien77">Profil</a>
+              <div class="Divider"></div>
+              <a href="{{ url_for('test_global') }}"  id="enCours1"  class="lien">Test Global</a> 
+              <div class="Divider" ></div>
+              <a href="{{ url_for('activitees') }}"  class="lien77">Activité</a>      
+              <div class="Divider" ></div>
+              <a href="{{ url_for('regles') }}" class="lien77">Règles ANSSI</a>      
+                 
+              
+        </div>
+    	</header>
+        
+        
+        
+        <main class="PageInfo"  style="margin-top:250px;padding-bottom:70px">
+            
+
+           <img src="../static/Images/fake.png" alt="Logo" style="height:470px;margin-top:30px"> 
+
+                
+        </main>
+    	
+    </body>
+    <footer class="footer5">
+            
+		<div class="footerContenu1">
+		<div class="LogoFooter"><p><img src="../static/Images/logoblanc2.png"  alt="Logo1" class="logo1"></p></div>
+        <div class="MailFooter"><h2 class="TextFooter"><br /> 67 Bd de Brandebourg, 94200 Ivry-sur-Seine<br />01 56 20 62 62<br />Nous contacter :<a href="mailto:directeur@teamsprint.fr">Envoyer un mail</a></h2></div>
+
+	</footer>
+</html>		

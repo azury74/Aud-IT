@@ -1,0 +1,16 @@
+Num,Description,Implémentation
+R2,Vérifier si pare-feu entre DMZ et Internet (pare-feu externe),En cours
+R3,Vérifier si pare-feu entre SI et DMZ (pare-feu interne),En cours 
+R13,Mutualisation des deux pare-feux impossible,En cours 
+R20,Ignorer paquets refusés par le pare-feu externe (mode DROP et pas REJECT),En cours 
+R4,Passerelle internet incontournable,En cours  
+R7,Pas de flux entre DMZ et SI (présence d’un serveur dans le DMZ),En cours 
+R8/R9,Présence rupture protocolaire + analyse des flux,En cours 
+R14,Homogénéiser les passerelles Internet sécurisées dans le cas d'une archi-tecture multi-zones,En cours 
+R12,DMZ organisé en zone (accès interne/externe/zone relais),En cours
+R19,Passer par routage statique et non dynamique,En cours  
+R18,Contre-mesures aux DDOS,En cours 
+R23,Authentification pour accéder à un contenu web,En cours  
+R24,Liste blanche contenant les adresse IP pour les contenus sans auth,En cours 
+R25,Analyse TLS,En cours
+R26,Centralisation des journaux liés aux accès web,En cours
