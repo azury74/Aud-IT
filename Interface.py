@@ -13,6 +13,9 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from spacy.lang.fr.stop_words import STOP_WORDS as fr_stop
 
+import subprocess
+subprocess.run(['python', '-m', 'spacy', 'download', 'fr_core_news_sm'])
+
 import  fr_core_news_sm
 stemmer = SnowballStemmer(language='french')
 nlp = fr_core_news_sm.load()
