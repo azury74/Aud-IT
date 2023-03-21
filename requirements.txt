@@ -2,7 +2,6 @@ APScheduler==3.10.1
 click==8.0.4
 Flask==2.1.0
 flask_sqlalchemy==3.0.3
-fr_core_news_sm==3.3.0
 nltk==3.7
 pandas==1.4.2
 requests==2.27.1
