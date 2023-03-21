@@ -16,6 +16,7 @@ This program combines network architecture and configuration analysis scripts wi
   - Routing rules
   - Administration of rights
 
+We also implement a live notification system of CVE. The system analyse each description of CVE to display only the one that matters to the customer.
 
 ## Installation :
 
