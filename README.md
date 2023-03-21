@@ -20,18 +20,14 @@ We also implement a live notification system of CVE. The system analyse each des
 
 ## Installation :
 
-In order to use the interface, you will need to install Flask : 
+In order to use the interface, you will need to install the requirements : 
 
-Install Flask, with pip :
+Install all the requirement by using, with pip :
 
 ```node
-$ pip install Flask
+$ python3 -m pip install -r requirements.txt
 ```
 
-Install Pandas, with pip : 
-```node
-$ pip install pandas
-```
 
 ### Start the project :
 
@@ -48,10 +44,10 @@ Flask :
 
 <https://flask.palletsprojects.com/en/2.1.x/installation/>
 
-Surprise :
+Spacy :
 
-<https://surprise.readthedocs.io/en/stable/>
+<https://spacy.io/usage/spacy-101>
 
-Panda :
+NLTK :
 
-<https://pandas.pydata.org/docs/>
+<https://www.nltk.org/>
