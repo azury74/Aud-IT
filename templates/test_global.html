@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="../static/css/style_plateforme.css">   
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/Images/favicon-32x32.png">
+        <title>AUD'IT</title>
+    </head>
+
+    <body>
+
+    	<header>
+
+    		<div class="header">
+   				<div class="LogoHeader"><img src="../static/Images/logoblanc2.png" alt="Logo" class="Logo"> </div>
+                                <div class="NomHeader"><h1 class="NameHeader">Plateforme de test</h1></div>
+                                <div class="Profil"><img src="../static/Images/profil.png"  alt="Logo" class="LogoProfil">
+                                <a href="{{ url_for('logout') }}" title="Déco" class="Deco">Déconnexion</a></div>
+
+   				<div class="HeaderFond"></div>
+			</div>
+    	<div class="NavEmploye">
+            
+              <a href="{{ url_for('accueil') }}" class="lien77">Profil</a>
+              <div class="Divider"></div>
+              <a href="{{ url_for('test_global') }}"  id="enCours1"  class="lien">Test Global</a> 
+              <div class="Divider" ></div>
+              <a href="{{ url_for('activitees') }}"  class="lien77">Activité</a>      
+              <div class="Divider" ></div>
+              <a href="{{ url_for('regles') }}" class="lien77">Règles ANSSI</a>      
+                 
+              
+        </div>
+    	</header>
+        
+        
+        
+        <main class="PageInfo"  style="margin-top:280px;padding-bottom:70px">
+            <div class="Info">
+                <img src="../static/Images/analyse.png" alt="Logo" class="LogoProfil8">
+                <div>
+                    <h1 class="policeProfil">Déposer le fichier :</h1>
+                     <h3 class="type2">Testez votre SI en 1 seul clic !</h3>
+                     
+                </div>
+            </div>
+           
+            
+    
+            
+            <h2 class="txt2">Déposer le/les fichiers de configuration : </h2>
+            
+            <div class="Divider4"></div>                        
+                    <div class="Info1">
+                    <p style="color:white;font-family:futura;margin-top:40px;">Veuillez déposer un fichier CSV. Tout autre format ne sera pas accepté !</p>
+                    
+                    {% if info != "none" %}
+                    
+                    <p style="color:red;font-family:futura;margin-top:40px">Mauvaise extension !</p>
+
+                    {% endif %}
+                    
+                    
+                    <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                      <div class="file-input">
+                      <input type="file" name="file" id="file" style="width:343px;color:white;font-family:Futura;background: rgb(148,28,182);background: linear-gradient(90deg, rgba(148,28,182,1) 0%, rgba(72,157,188,1) 100%);"/>
+                      
+                      </label>
+                    </div>
+                     <div class="Envoi8">
+                    
+                    <button class="button" type="submit" name="envoyer" ><span>Envoyer le/les fichiers</span></button>
+                </div>
+    </form>
+         </div>
+
+           
+
+                
+        </main>
+    	
+    </body>
+    <footer class="footer5">
+            
+		<div class="footerContenu1">
+		<div class="LogoFooter"><p><img src="../static/Images/LogoEsme.png"  alt="Logo1" class="logo1"></p></div>
+        <div style="display:flex;margin-left:10px">
+                    		
+            <a href="https://www.linkedin.com/in/louis-laurent-34a334181/" target="_blank"><img src="../../static/Images/louisRond.png"  alt="Logo1" class="logo1" style="margin-top:20px"></a>
+            <img src="../../static/Images/lisaRond.png"  alt="Logo1" class="logo1" style="margin-top:20px">
+            <img src="../../static/Images/walidRond.png"  alt="Logo1" class="logo1" style="margin-top:20px">
+            <div class="MailFooter"><h2 class="TextFooter">Projet de fin d'étude, Groupe : Louis Laurent - Lisa Cohen - Walid BenBella </br>Nous contacter pour toutes questions : <a href="mailto:louis.laurent@vinci-energies.com" style="text-decoration: underline;" >Cliquez-ici</a> </br>Lien github de notre projet : <a href="https://github.com/azury74/Aud-IT" target="_blank" style="text-decoration: underline;">Cliquez-ici</a></h2></div>
+		</div>
+</div>
+	</footer>
+</html>		

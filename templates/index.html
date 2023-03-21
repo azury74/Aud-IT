@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="utf-8" />
+        <title>AUD'IT</title>
+        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/Images/favicon-32x32.png">
+        
+
+        <link rel="manifest" href="../static/Images/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">       
+    </head>
+    
+    <body class="body1">
+    	<header>
+    		<div>                
+                <div><img src="../static/Images/logoblanc2.png" alt="Logo de l'entreprise" class="Logo" id="top" to_> </div>
+                    <div class="NavAcceuil">
+                        <a href="" title="Acceuil" class="lien1" id="enCours1">Accueil</a>
+                        <a href="#crea" class="lien77">Notre outil</a>
+                        <a href="#quis" class="lien77">Qui sommes nous</a>
+                        <a href="#contact" class="lien77">Contactez-nous</a>
+                        <a href="{{ url_for('SignIn') }}" class="lien78">Connexion</a>
+                    </div>
+                    
+                                
+   				<div class="HeaderFond"></div>
+                                
+                               
+			</div>
+    	
+    	</header>
+      
+        <section >        
+   			<div class="BandeAcceuil">
+                <img src="../static/Images/cloud.png" alt="Nuage de décoration" class="ml1250mt250">
+                    <div class="bande1">
+                        <h1 class="TitreBandeAcceuil">Création d'outils d'audit automatisé dans le domaine de la cybersécurité...</h1>
+                        <img src="../static/Images/creation-site-web.png" alt="Ordinateur, téléphone, tablette" class="height400">
+                    </div>
+                    <img src="../static/Images/ping.png" alt="Décoration" class="ping">
+                    <img src="../static/Images/cloud4.png" alt="Nuage de décoration" class="cloud1">
+			</div>
+    	</section>
+        
+         <section >                        
+   			<div class="BandeAcceuil2" id="crea"> 
+                <div class="bande2">    
+                    <div style="display:flex">     
+                        <img src="../static/Images/logoblanc2.png" class="height500">
+                        <h2 class="TitreBandeAcceuil2">, qu'est ce que c'est ?</h2>
+                    </div>
+                    <div style="display:flex">
+                        <p class="txtCrea">Aud'it est un outil d'audit <strong>automatisé</strong> qui va tester pour vous et presque <strong>instantanément</strong> la robustesse de vos <strong>systèmes d'informations</strong>. Notre algorithme se base sur plus de <strong>400 normes ANSSI</strong>. Ces normes permettent de protéger efficacement vos systèmes d'informations contre de potentielles <strong>attaques malveillantes</strong>... </p>  
+                        <img src="../static/Images/bandequi.png" alt="Ordinateur, téléphone, tablette" class="height4400">
+                    </div>
+                </div>
+                                 
+                <img src="../static/Images/cloud5.png" alt="Nuage de décoration" class="cloud2">
+                          
+                           
+			</div>
+            <img src="../static/Images/avion.png" alt="Avion de décoration" class="avion">       
+            <div class="div8">
+                <div>
+                    <h2 class="TitreBandeAcceuil3">La cybersécurité c'est important ?</h2>
+                    <div class="vid">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tFaLCj4qBuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>               
+                    <div class="div9">
+                        <p class="txtCrea">En<strong> 2021 </strong>ce n'est pas moins de <strong>54%</strong> des entreprises françaises qui se sont faites attaquées. Alors la réponse est oui, protéger son système d'information est devenu primordial.</p>
+                        <p class="txtCrea">Une architecture <strong>protégée</strong> et <strong>fiable</strong>, c'est une architecture qui respecte des normes. Nous travaillons main dans la main avec l'<strong> ANSSI </strong> pour vous fournir les dernières mises à jours en terme de sécurité.</p>
+                    </div>
+                </div>
+            </div>                            
+    	</section>
+        <section >           
+   			<div class="BandeAcceuil3" id="quis">
+                <div class="bande3">
+                     <div>
+                        <h2 class="titreQui">Ingénierie informatique</h2>
+                        <p class="txtQui">Expert en <strong>ingénierie informatique</strong>, nous avons étudié dans une des plus anciennes écoles d’ingénieurs de France : l’ESME Sudria. Profondemment ancrée dans le monde professionel, nous connaissons tous les enjeux nécessaires pour vous faire devenir une référence en protection de vos systèmes d'informations...</p>
+                    </div>
+                    <img src="../static/Images/LogoEsme1.png" alt="Logo entreprise et école" class="logoEsme">
+                </div>                                                 
+			</div>
+    	</section>
+        
+       
+
+                      
+                         
+   			<div class="BandeAcceuil3" id="contact">
+                            
+                            
+                            <div class="div2">
+                              
+                                                          <img src="../static/Images/cloud4.png" alt="Nuage de décoration" class="cloud3">
+                                                          
+                                                          <img src="../static/Images/contact.png" alt="illustration contact téléphonique" class="contact" style="z-index:2">
+
+                                                        
+                                                    
+                                                            <img src="../static/Images/piaf.png" alt="Oiseau décoration" class="piaf" >
+                                                         <div class="div10">
+                                                             <h2 class="contactez">Contactez-nous</h2>
+<div>
+                                                              <div class="div3" style="z-index:1">
+
+  <form action="envoi.php" method="post">
+    <div>
+    <label for="Nom" class="txt">Nom : </label>
+    <input type="text" id="Nom" name="Nom" placeholder="Jean Dupont" class="inputText">
+    </div>
+    
+    <div>
+    <label for="Email" class="txt">Email :</label>
+    <input type="text" id="Email" name="Email" placeholder="exemple@exemple.com" class="inputText">
+    </div>
+    
+    <div>
+    <label for="Message" class="txt">Message :</label>
+    <textarea type="text" id="Message" name="Message" placeholder="Bonjour..." class="inputText"></textarea>
+    </div>
+    
+    <div>
+                   <button class="button" type="submit" name="envoyer"><span>Envoyer la demande</span></button>
+                    
+    </div>
+</form>
+
+      </div>  
+
+
+                                                         </div>
+ 
+                            </div>
+                            
+                                                                   
+                         
+			</div>
+
+    	</section >
+        <footer class="footer">  <img src="../static/Images/terre.png" alt="bande de terre" class="terre">
+         </footer>
+    	
+    </body>
+    <div id="scrollUp">
+        <a href="#top"><img src="../static/Images/to_top.png" alt="flêche pour remonter" class="height50"/></a>
+</div>
+</html>	
+
+<script> document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+jQuery(function(){
+    $(function () {
+        $(window).scroll(function () { 
+            if ($(this).scrollTop() > 200 ) {  
+                $('#scrollUp').css('right','10px');
+            } else { 
+                $('#scrollUp').removeAttr( 'style' ); 
+            }
+        });
+    });
+});
+
+
+ </script>
+
+	
+
+
+						
