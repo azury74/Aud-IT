@@ -1,4 +1,0 @@
-Num,Description,Implémentation,Nom,Valeur_attendue,Type_test,Type_règle
-R2,La version TLS doit être supérieur ou égale à 1.3,Fait,TLS,1.3,float,Protocole
-R3,Le SI doit utiliser IPSEC,Fait,IPSEC,true,bool,Protocole
-R8,La connexion à internet doit être filtré ,Fait,Filtre,true,bool,Routage
