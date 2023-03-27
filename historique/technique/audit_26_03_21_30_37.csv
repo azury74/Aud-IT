@@ -1,0 +1,42 @@
+Informations,Nom,Description,Test,Type_règle
+Score_audit=60/100,Pare-feux,Votre pare-feu contient des règles nécessaires à la protection de votre SI,Valide,Routage
+Date_audit=26/03/2023 21:30,Active,Vérification des connexions actives,Non Valide,Routage
+"NbRèglesOkProt=8,NbRèglesNokProt=5,NbRèglesOkRout=7,NbRèglesNokRout=5,NbRègleOkEqu=6,NbRèglesNokEqu=2,NbRègleOkProtec=4,NbRèglesNokProtec=4",Stats,Les statistiques systèmes sont corrects,Non Valide,Protocole
+,TcpIp,Vérification des connexions TCP/IP actives,Valide,Routage
+,Mem,Vérification de la mémoire disponible,Non Valide,Equipement
+,Espace,Vérification de l’espace disque disponible,Valide,Equipement
+,JourPar,Les journaux pare-feu sont disponibles et sont corrects,Non Valide,Protection
+,ConfDns,La configuration DNS est bien effectuée ,Valide,Protocole
+,ConVpn,Le VPN est présent et bien configuré ,Valide,Equipement
+,JourDHCP,Les journaux DHCP sont disponibles et sont corrects,Valide,Protocole
+,ConfPar,Le pare-feu est correctement paramétré,Non Valide,Protection
+,ConfNAT,NAT est correctement configuré ,Non Valide,Protocole
+,EtaNTP,Vérification que le service NTP fonctionne correctement ,Non Valide,Protocole
+,PassDef,Vérifier que la passerelle par défaut existe et qu’elle est correctement configurée,Valide,Routage
+,SSHAct,Vérification des connexions SSH actives,Valide,Routage
+,JourOVPN,Les journaux OpenVPN sont disponibles et sont corrects,Valide,Protocole
+,RedirPort,Vérifier que les redirections de port sont bien paramétrés,Valide,Routage
+,EtatSquid,Vérifier que le serveur Squid fonctionne ,Valide,Equipement
+,JourSquid,Les journaux du proxy Squid sont disponibles et sont corrects,Non Valide,Equipement
+,EtaDNS,Vérification que le DNS Resolver fonctionne correctement ,Non Valide,Routage
+,EtaDHCP,Vérification que le DHCP fonctionne correctement ,Valide,Protocole
+,TLS,La version TLS doit être supérieur ou égale à 1.3,Valide,Protocole
+,IPSEC,Le SI doit utiliser IPSEC,Valide,Protocole
+,Filtre,La connexion à internet doit être filtré par une DMZ,Non Valide,Routage
+,SSH,Connexion en SSH autorisée,Valide,Protocole
+,VPN,Utiliser obligatoirement un VPN pour connexion à distance,Non Valide,Protocole
+,Redondance,Redondance des équipements,Valide,Equipement
+,Flux1,Autoriser les flux internes entrants ,Non Valide,Routage
+,Flux2,Bloquer les flux externes de sources inconnus ,Valide,Routage
+,Paramétrage,Habilitation paramétrage des équipements réseaux,Valide,Equipement
+,Confidentialité,Confidentialité des informations sensibles par système de classe,Non Valide,Protection
+,Interconnexion,Interconnexion des SI internes,Valide,Protection
+,Classe,"Délimitation des classes des SI (0,1 ou 2)",Non Valide,Protection
+,Proxy,Utilisation de proxy filtrant,Valide,Protection
+,Chiffrement,Chiffrement des informations sensibles,Valide,Protection
+,Accès,Interdire l'accès aux applications sensibles depuis les SI,Valide,Protection
+,Transfert,Système d'échanges sécurisés,Non Valide,Protocole
+,Cloisonnement1,Cloisonnement du SI,Valide,Routage
+,Cloisonnement2,Durcissement du SI,Non Valide,Routage
+,Reconnaissance,Code couleur pour le câblage des équipements,Valide,Equipement
+,SSO,Protéger les secrets d'authentifications ,Valide,Protocole

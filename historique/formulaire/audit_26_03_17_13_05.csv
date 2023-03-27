@@ -1,0 +1,13 @@
+Informations,Description,Test
+Score_audit=58/100,Avez-vous formé les administrateurs à l'état de l'art en matière de SSI ?,Valide
+Date_audit=26/03/2023 17:13,Disposez vous d'une documentation des SI à jour ?,Non Valide
+,Avez-vous formé les administrateurs à l'état de l'art en matière de SSI ?,Valide
+,Avez-vous informé les administrateurs de leurs droits et devoirs ?,Valide
+,Utilisez-vous des comptes d'administration dédiés ?,Valide
+,Avez-vous prévu un processus de gestion des comptes d'administration ?,Non Valide
+,Modifiez-vous les mots de passe par défaut des comptes natifs ?,Non Valide
+,Avez-vous activez l'authentification à doubles facteurs ?,Valide
+,Avez-vous défini une politique de sauvegarde du SI d'administration ?,Non Valide
+,Avez-vous dédié une zone d'administration à la journalisation ?,Valide
+,Centralisez-vous la collecte des journaux d'événements ?,Non Valide
+,Avez-vous mis en place des serveurs relais pour la récupération des mises à jour ?,Valide
