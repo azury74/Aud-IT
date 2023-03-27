@@ -1,4 +1,0 @@
-Informations,Nom,Description,Test,Type_règle
-Score_audit=66/100,TLS,La version TLS doit être supérieur ou égale à 1.3,Non Valide,Protocole
-Date_audit=20/03/2023 18:45,IPSEC,Le SI doit utiliser IPSEC,Valide,Protocole
-"NbRèglesOkProt=1,NbRèglesNokProt=1,NbRèglesOkRout=1,NbRèglesNokRout=0",Filtre,La connexion à internet doit être filtré ,Valide,Routage
