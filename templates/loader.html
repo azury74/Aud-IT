@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="../static/css/style_plateforme.css">   
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/Images/favicon-32x32.png">
+        <title>AUD'IT</title>
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+
+    	<header>
+
+    		<div class="header">
+   				<div class="LogoHeader"><img src="../static/Images/logoblanc2.png" alt="Logo" class="Logo"> </div>
+                                <div class="NomHeader"><h1 class="NameHeader">Plateforme de test</h1></div>
+                                <div class="Profil"><img src="../static/Images/profil.png"  alt="Logo" class="LogoProfil">
+                                {% if notif == True %}
+                                     <a href="{{url_for('loader',notif='afficher')}}"><img src="../static/Images/notif1.png"  alt="Logo" class="LogoProfil"></a>
+                                {% else %}
+                                    <a href="{{url_for('loader',notif='afficher')}}"> <img src="../static/Images/notif.png"  alt="Logo" class="LogoProfil"></a>
+                                {% endif %}
+                               
+                                <a href="{{ url_for('logout') }}" title="Déco" class="Deco">Déconnexion</a></div>
+
+                                 {% if no == "afficher" %}
+                                 
+                                 <div style="position:absolute;top:140px;right:250px;background-color:rgb(79, 76, 75);border-radius:10px;z-index:4">{%for i in list_notif%}<p style="color:white;font-family:Futura;padding:10px">{{i}}</p> {% endfor %}</div>
+                                 {% endif %}
+   				<div class="HeaderFond"></div>
+			</div>
+    	<div class="NavEmploye">
+            
+              <a href="{{ url_for('accueil') }}" class="lien77">Profil</a>
+              <div class="Divider"></div>
+              <a href="{{ url_for('test_global') }}"  id="enCours1"  class="lien">Test Global</a> 
+              <div class="Divider" ></div>
+              <a href="{{ url_for('activitees') }}"  class="lien77">Activité</a> 
+              {% if notif == True %}
+                   <img src="../static/Images/notif2.png"  alt="Logo" class="LogoProfil" style="height:8px;margin-left:-11px;margin-top:0px;margin-right:7px">
+              {% endif %}        
+              <div class="Divider" ></div>
+              <a href="{{ url_for('regles') }}" class="lien77">Règles ANSSI</a>      
+                 
+              
+        </div>
+    	</header>
+         <style>
+         .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin-left:585px;
+  margin-top:60px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 164px;
+  height: 164px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+         </style>
+        
+        
+        <main class="PageInfo"  style="margin-top:280px;padding-bottom:70px">
+            
+           <div class="Info">
+               <img src="../static/Images/analyse.png" alt="Logo" class="LogoProfil8">
+               <div style="margin-top:40px;padding:20px">
+                   <h1 class="policeProfil" style="font-weight: bold;">Résultats de l'analyse :</h1>
+                   <h3 class="type2" style="margin-top:10px" style="font-weight: bold;">Découvrez votre score !</h3>
+               </div>
+           </div>
+           <h2 class="txt2">Les données de votre analyse :</h2>
+           
+           
+           <div class="Divider4"></div>   
+           
+          <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    
+
+         <script> window.location.replace('/result'); </script>
+
+           
+    
+                
+        </main>
+    	
+    </body>
+    <footer class="footer5">
+            
+		<div class="footerContenu1">
+		<div class="LogoFooter"><p><img src="../static/Images/LogoEsme.png"  alt="Logo1" class="logo1"></p></div>
+        <div style="display:flex;margin-left:10px">
+                    		
+            <a href="https://www.linkedin.com/in/louis-laurent-34a334181/" target="_blank"><img src="../../static/Images/louisRond.png"  alt="Logo1" class="logo1" style="margin-top:20px"></a>
+            <img src="../../static/Images/lisaRond.png"  alt="Logo1" class="logo1" style="margin-top:20px">
+            <img src="../../static/Images/walidRond.png"  alt="Logo1" class="logo1" style="margin-top:20px">
+            <div class="MailFooter"><h2 class="TextFooter">Projet de fin d'étude, Groupe : Louis Laurent - Lisa Cohen - Walid BenBella </br>Nous contacter pour toutes questions : <a href="mailto:louis.laurent@vinci-energies.com" style="text-decoration: underline;" >Cliquez-ici</a> </br>Lien github de notre projet : <a href="https://github.com/azury74/Aud-IT" target="_blank" style="text-decoration: underline;">Cliquez-ici</a></h2></div>
+		</div>
+</div>
+	</footer>
+</html>		

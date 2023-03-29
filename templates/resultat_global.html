@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="../static/css/style_plateforme.css">   
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/Images/favicon-32x32.png">
+        <title>AUD'IT</title>
+    </head>
+
+    <body>
+ 
+
+    	<header>
+
+    		<div class="header">
+   				<div class="LogoHeader"><img src="../static/Images/logoblanc2.png" alt="Logo" class="Logo"> </div>
+                                <div class="NomHeader"><h1 class="NameHeader">Plateforme de test</h1></div>
+                                <div class="Profil"><img src="../static/Images/profil.png"  alt="Logo" class="LogoProfil">
+                                {% if notif == True %}
+                                     <img src="../static/Images/notif1.png"  alt="Logo" class="LogoProfil">
+                                {% else %}
+                                    <img src="../static/Images/notif.png"  alt="Logo" class="LogoProfil">
+                                {% endif %}
+                               
+                                <a href="{{ url_for('logout') }}" title="Déco" class="Deco">Déconnexion</a></div>
+
+                                 {% if no == "afficher" %}
+                                 
+                                 <div style="position:absolute;top:140px;right:250px;background-color:rgb(79, 76, 75);border-radius:10px;z-index:4">{%for i in list_notif%}<p style="color:white;font-family:Futura;padding:10px">{{i}}</p> {% endfor %}</div>
+                                 {% endif %}
+   				<div class="HeaderFond"></div>
+			</div>
+    	<div class="NavEmploye">
+            
+              <a href="{{ url_for('accueil') }}" class="lien77">Profil</a>
+              <div class="Divider"></div>
+              <a href="{{ url_for('test_global') }}"  id="enCours1"  class="lien">Test Global</a> 
+              <div class="Divider" ></div>
+              <a href="{{ url_for('activitees') }}"  class="lien77">Activité</a> 
+              {% if notif == True %}
+                   <img src="../static/Images/notif2.png"  alt="Logo" class="LogoProfil" style="height:8px;margin-left:-11px;margin-top:0px;margin-right:7px">
+              {% endif %}        
+              <div class="Divider" ></div>
+              <a href="{{ url_for('regles') }}" class="lien77">Règles ANSSI</a>      
+                 
+              
+        </div>
+    	</header>
+        
+        
+        
+        <main class="PageInfo"  style="margin-top:280px;padding-bottom:70px">
+            
+           <div class="Info">
+               <img src="../static/Images/analyse.png" alt="Logo" class="LogoProfil8">
+               <div style="margin-top:20px;padding:20px">
+                   <h1 class="policeProfil">Résultats de l'analyse :</h1>
+                   <h3 class="type2">Découvrez votre score !</h3>
+               </div>
+           </div>
+           
+           
+           
+           <div style="display:flex;margin-left:50px;margin-right :10px;margin-top:30px;">
+           <img src="../static/Images/big-data.png" alt="Logo" style="height:30px;margin-top:8px;margin-bottom:5px">
+               <h2 class="txt3">Analyse des fichiers de configuration :</h2>
+           </div>
+           
+           
+           
+           <div class="Divider4"></div>   
+           
+         
+           <div style="display:flex;margin-top:20px;margin-left:45px">
+               
+               <div>
+                   {% if result == 0 %}
+                   
+                   <img src="../static/Images/diagramme/0.png" alt="Logo" style="height:350px;margin-top:130px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 10 and result <= 20 %}
+                   
+                   <img src="../static/Images/diagramme/10.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 10 and result <= 20 %}
+                   
+                   <img src="../static/Images/diagramme/20.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 20 and result <= 30 %}
+                   
+                   <img src="../static/Images/diagramme/30.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 30 and result <= 40 %}
+                   
+                   <img src="../static/Images/diagramme/40.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 40 and result <= 50 %}
+                   
+                   <img src="../static/Images/diagramme/50.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 50 and result <= 60 %}
+                   
+                   <img src="../static/Images/diagramme/60.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 60 and result <= 70 %}
+                   
+                   <img src="../static/Images/diagramme/70.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 70 and result <= 80 %}
+                   
+                   <img src="../static/Images/diagramme/80.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 80 and result <= 90 %}
+                   
+                   <img src="../static/Images/diagramme/90.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result > 90 and result <100%}
+                   
+                   <img src="../static/Images/diagramme/100.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   {% elif result == 100 %}
+                   
+                   <img src="../static/Images/diagramme/110.png" alt="Logo" style="height:350px;margin-top:90px;margin-left:100px" class="pepe">
+                   
+                   
+                   {% endif %}
+                   
+               </div>
+               
+             
+                   
+               
+               <div style="margin-left:100px;margin-top:10px">
+                   <div style="display:flex">
+                    <img src="../static/Images/evaluation.png" alt="Logo" style="height:50px;margin-top:20px;margin-right:15px">
+                       <p style="color:white;font-family:futura;font-size:1.8em"> Note technique globale : {{result}}/100</p>
+                   </div>
+                   
+                    <table style="text-align:center;margin-top:10px;width:110%;border:None" id="studtable" >
+                      
+                       <tbody>
+                          
+                               <tr>
+                                   <td style="width:50%;height:30px;border:0;text-align:left"><p style="color:white;font-family:futura;font-size:1.3em">Règles protocoles : </p> </td>
+                                   <td style="width:20%;display:flex;border:0">
+                                   
+                                       <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[0][0] }}</p> 
+                                       <img src="../static/Images/accept.png" style="margin-left:10px;margin-right:20px;height:40px;margin-top:25px">
+                                   
+                                       <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[0][1] }}</p>
+                                       <img src="../static/Images/remove.png" style="margin-left:10px;height:40px;margin-top:25px"></td>
+                                   
+                                   <td style="width:25%;border:0"><a href={{url_for('details_prot_complet',filename1=filename,filename2=filename2)}} title="Déco" class="Deco" style="text-decoration: underline;font-family:Futura;margin-top:30px;">Détails > </a></td>
+                             
+                              </tr>
+                              
+                              <tr style="border:0">
+                                  <td style="width:50%;height:30px;border:0;text-align:left"> <p style="color:white;font-family:futura;font-size:1.3em"> Règles routages : </p></td>
+                                  <td style="width:20%;display:flex;border:0">
+                                  
+                                      <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[1][0] }}</p>  
+                                      <img src="../static/Images/accept.png" style="margin-left:10px;margin-right:20px;height:40px;margin-top:25px">
+                                  
+                                      <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[1][1] }}</p>
+                                      <img src="../static/Images/remove.png" style="margin-left:10px;height:40px;margin-top:25px"></td>
+                                  <td style="width:25%;border:0"><a href={{url_for('details_rout_complet',filename1=filename,filename2=filename2)}} title="Déco" class="Deco" style="text-decoration: underline;font-family:Futura;margin-top:30px;">Détails > </a></td>
+                            
+                             </tr>
+                             
+                             <tr style="border:0">
+                                 <td style="width:50%;height:30px;border:0;text-align:left"> <p style="color:white;font-family:futura;font-size:1.3em"> Règles équipement : </p></td>
+                                 <td style="width:20%;display:flex;border:0">
+                                 
+                                     <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[2][0] }}</p>  
+                                     <img src="../static/Images/accept.png" style="margin-left:10px;margin-right:20px;height:40px;margin-top:25px">
+                                 
+                                     <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[2][1] }}</p>
+                                     <img src="../static/Images/remove.png" style="margin-left:10px;height:40px;margin-top:25px"></td>
+                                 <td style="width:25%;border:0"><a href={{url_for('details_equ_complet',filename1=filename,filename2=filename2)}} title="Déco" class="Deco" style="text-decoration: underline;font-family:Futura;margin-top:30px;">Détails > </a></td>
+                           
+                            </tr>
+                            
+                             <tr style="border:0">
+                                 <td style="width:50%;height:30px;border:0;text-align:left"> <p style="color:white;font-family:futura;font-size:1.3em"> Règles protection : </p></td>
+                                 <td style="width:20%;display:flex;border:0">
+                                 
+                                     <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[3][0] }}</p>  
+                                     <img src="../static/Images/accept.png" style="margin-left:10px;margin-right:20px;height:40px;margin-top:25px">
+                                 
+                                     <p style="color:white;font-family:futura;font-size:1.5em">{{ regles[3][1] }}</p>
+                                     <img src="../static/Images/remove.png" style="margin-left:10px;height:40px;margin-top:25px"></td>
+                                 <td style="width:25%;border:0"><a href={{url_for('details_protec_complet',filename1=filename,filename2=filename2)}} title="Déco" class="Deco" style="text-decoration: underline;font-family:Futura;margin-top:30px;">Détails > </a></td>
+                           
+                            </tr>
+                            
+                            
+                             
+                             
+                      </tbody>
+                        
+                         
+                        </table>
+                        
+                        
+                        
+                
+                    
+           </div>
+           </div>
+           <div style="display:flex;margin-left:50px;margin-right :10px;margin-top:30px;">
+           <img src="../static/Images/formulaire-dadoption.png" alt="Logo" style="height:30px;margin-top:8px;margin-bottom:5px">
+               <h2 class="txt3">Analyse de votre formulaire :</h2>
+           </div>
+           
+           <div class="Divider4"></div>                        
+                   <div style="display:flex;margin-top:0px;margin-left:45px">
+                       <div style="margin-left:130px;margin-top:60px">
+                           <div style="display:flex">
+                            <img src="../static/Images/evaluation.png" alt="Logo" style="height:50px;margin-top:20px;margin-right:15px">
+                               <p style="color:white;font-family:futura;font-size:1.8em"> Note formulaire globale : {{result2}}/100</p>
+                               
+                           </div>
+                           <p style="color:white;font-family:futura;width:470px;font-size:1.2em;line-height: 30px;">Voici le score que vous avez obtenu d'après les informations que vous nous avez fournies. Si vous vous êtes trompé lors du remplissage du formulaire, vous pouvez refaire une analyse de fichier !</p>
+                           <p style="color:white;font-family:futura"><a href={{url_for('details_form',filename1=filename,filename2=filename2)}} title="Déco" class="Deco" style="text-decoration: underline;font-family:Futura;margin-top:35px;margin-left:-3px">Détails > </a></p>
+
+                         </div>
+                         
+                       <div>
+                           {% if result2 == 0 %}
+                           
+                           <img src="../static/Images/diagramme/0.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 10 and result2 <= 20 %}
+                           
+                           
+                           <img src="../static/Images/diagramme/10.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 10 and result2 <= 20 %}
+                           
+                           <img src="../static/Images/diagramme/20.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 20 and result2 <= 30 %}
+                           
+                           <img src="../static/Images/diagramme/30.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 30 and result2 <= 40 %}
+                           
+                           <img src="../static/Images/diagramme/40.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 40 and result2 <= 50 %}
+                           
+                           <img src="../static/Images/diagramme/50.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 50 and result2 <= 60 %}
+                           
+                           <img src="../static/Images/diagramme/60.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 60 and result2 <= 70 %}
+                           
+                           <img src="../static/Images/diagramme/70.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 70 and result2 <= 80 %}
+                           
+                           <img src="../static/Images/diagramme/80.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 80 and result2 <= 90 %}
+                           
+                           <img src="../static/Images/diagramme/90.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 > 90 and result2 <100%}
+                           
+                           <img src="../static/Images/diagramme/100.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           {% elif result2 == 100 %}
+                           
+                           <img src="../static/Images/diagramme/110.png" alt="Logo" style="height:350px;margin-top:100px;margin-left:120px" class="pepe">
+                           
+                           
+                           {% endif %}
+                           
+                       </div>
+                       
+                       
+                       
+                       
+                       
+                      </div>
+    
+                
+        </main>
+    	
+    </body>
+    <footer class="footer5">
+            
+		<div class="footerContenu1">
+		<div class="LogoFooter"><p><img src="../static/Images/LogoEsme.png"  alt="Logo1" class="logo1"></p></div>
+        <div style="display:flex;margin-left:10px">
+                    		
+            <a href="https://www.linkedin.com/in/louis-laurent-34a334181/" target="_blank"><img src="../../static/Images/louisRond.png"  alt="Logo1" class="logo1" style="margin-top:20px"></a>
+            <img src="../../static/Images/lisaRond.png"  alt="Logo1" class="logo1" style="margin-top:20px">
+            <img src="../../static/Images/walidRond.png"  alt="Logo1" class="logo1" style="margin-top:20px">
+            <div class="MailFooter"><h2 class="TextFooter">Projet de fin d'étude, Groupe : Louis Laurent - Lisa Cohen - Walid BenBella </br>Nous contacter pour toutes questions : <a href="mailto:louis.laurent@vinci-energies.com" style="text-decoration: underline;" >Cliquez-ici</a> </br>Lien github de notre projet : <a href="https://github.com/azury74/Aud-IT" target="_blank" style="text-decoration: underline;">Cliquez-ici</a></h2></div>
+		</div>
+</div>
+	</footer>
+</html>		
